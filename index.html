@@ -65,12 +65,23 @@
     </header>
     <main>
       <!--------Section 1------->
-      <section class="hero-section">
+      <section>
         <div class="hero-background">
           <h1 class="hero-title animate__animated animate__backInDown">
             Effective Solutions for Your Business
           </h1>
-          <button type="button" class="hero-button">Order Service</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Order Service
+          </button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button data-modal-close class="modal-btn">
+              <svg width="8" height="8">
+                <use href="./images/icons.svg#close"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <!--Section 2-->
@@ -82,7 +93,7 @@
           <li class="item">
             <div class="feature-icon-area">
               <svg class="feature-icon">
-                <use href="./images/icons.svg#antena"></use>
+                <use href="./images/icons.svg#antenna"></use>
               </svg>
             </div>
             <h3 class="feature-title">Strategy</h3>
@@ -401,5 +412,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
